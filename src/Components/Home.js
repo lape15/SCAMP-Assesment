@@ -43,7 +43,7 @@ const Home = () => {
           <div
             className="flex w-auto  border
             border-solid
-            border-gray-100 transition duration-500 ease-in-out bg-gray-200 transform hover:-translate-y-1 hover:scale-90"
+            border-gray-100 transition duration-500 ease-in-out bg-gray-200 transform hover:-translate-y-1 hover:scale-100"
             key={index}
           >
             <div className="flex-1 m-12  w-16 text-blue-800 font-black tracking-wider ">
