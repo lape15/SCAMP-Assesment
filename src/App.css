@@ -1,0 +1,21 @@
+.active {
+  border: 2px solid green;
+}
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .hidden.menu {
+    /* border: 2px solid red; */
+    display: block;
+    position: absolute;
+    top: 7vh;
+    left: 10px;
+    width: 351px;
+    text-align: center;
+    background-color: #f9e6ff;
+    padding: 30px 10px;
+    box-shadow: 2px 2px aliceblue;
+  }
+  .hidden.hide {
+    display: none;
+  }
+}
