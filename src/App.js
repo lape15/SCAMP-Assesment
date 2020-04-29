@@ -7,6 +7,7 @@ import { Route, Switch } from 'react-router-dom'
 import NavBar from './Components/Nav'
 import Home from './Components/Home'
 import Test from './Components/Test'
+import Country from './Components/Country'
 
 function App() {
   return (
@@ -15,6 +16,11 @@ function App() {
       <Switch>
         <Route path="/(|home)/" exact component={Home} />
         <Route path="/test" exact component={Test} />
+        <Route
+          path="/home/:countrySlug"
+          exact
+          render={(props) => <Country {...props} />}
+        />
       </Switch>
     </div>
   )
