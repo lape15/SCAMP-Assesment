@@ -32,18 +32,18 @@ const Home = () => {
       <h2 className="text-center text-blue-800 italic lg:text-3xl mb-6 md: text-xl text-center">
         Get your daily COVID19 updates here
       </h2>
-      <div class="w-full max-w-xs text-center">
+      <div class="w-full max-w-xs text-center  m-auto">
         <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
           <input
-            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+            class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline text-center outline-none"
             type="text"
-            placeholder="Country"
+            placeholder="Search for a country"
             onChange={handeleSearch}
           />
         </form>
       </div>
-      <div className="w-full bg-gray-400 text-gray-400  h-full">
-        <div className="flex  lg:w-auto lg:bg-gray-300 ">
+      <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 p-12">
+        <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300">
           <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
             Country
           </div>

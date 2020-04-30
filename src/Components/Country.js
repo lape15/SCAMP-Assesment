@@ -20,41 +20,51 @@ const Country = (props) => {
   getCountryStat(countrySlug)
 
   return (
-    <div className="grid grid-flow-col grid-rows-2 sm:grid-rows-3 md:grid-rows-4 lg:grid-rows-5 xl:grid-rows-6 overflow-x-hidden">
+    <div className="w-auto  p-6 h-auto bg-transparent">
       {country && country.length > 0 ? (
         country.map((oneCountry, index) => {
           return (
             <div
-              className="text-center bg-transparent px-4 py-4 m-2 relative  h-auto border border-solid border-gray-200 rounded"
+              className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 p-12"
               key={index}
             >
-              <h3 className="text-blue-900  text-2xl bg-gray-200 mb-5">
-                {oneCountry.Country}
-              </h3>
-              <div>
-                <div className="text-2xl mr-4">Confirmed cases:</div>
-                <span className="text-4xl text-gray-900 font-bold">
+              <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300">
+                <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+                  Name
+                </div>
+                <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+                  Confirmed cases
+                </div>
+                <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+                  Deaths
+                </div>
+                <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+                  Recovered
+                </div>
+                <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+                  Date
+                </div>
+              </div>
+              <div
+                className="flex w-auto  border
+            border-solid
+            border-gray-100 transition duration-500 ease-in-out bg-gray-200 transform hover:-translate-y-1 hover:scale-100 cursor-pointer"
+              >
+                <div className="flex-1 m-12  w-16 text-blue-800 font-black tracking-wider ">
+                  {oneCountry.Country}
+                </div>
+                <div className="flex-1 m-12  w-8 text-red-500 font-black tracking-wider ">
                   {oneCountry.Confirmed}
-                </span>
-              </div>
-              <div>
-                {' '}
-                <div className="text-2xl mr-4">Deaths:</div>
-                <span className="text-4xl text-red-500 font-bold">
+                </div>
+                <div className="flex-1 m-12  w-8 text-red-500 font-black tracking-wider ">
                   {oneCountry.Deaths}
-                </span>
-              </div>
-              <div>
-                <div className="text-2xl mr-4">Recovered:</div>
-                <span className="text-4xl text-green-500 font-bold">
+                </div>
+                <div className="flex-1 m-12  w-8 text-green-500 font-black tracking-wider">
                   {oneCountry.Recovered}
-                </span>
-              </div>
-              <div>
-                <div className="text-2xl mr-4">Date:</div>
-                <span className="text-2xl text-gray-500 font-bold">
+                </div>
+                <div className="flex-1 m-12  w-16 text-blue-800 font-black tracking-wider">
                   {new Date(oneCountry.Date).toDateString()}
-                </span>
+                </div>
               </div>
             </div>
           )
