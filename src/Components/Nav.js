@@ -14,7 +14,7 @@ const NavBar = () => {
       {/*className="sm:border sm:border-solid sm:border-blue-400"*/}
       <div class="container mx-auto px-6 py-2 flex justify-between items-center relative">
         <NavLink class="font-bold text-2xl lg:text-4xl" to="/home">
-          SHMWE
+          Covid19
         </NavLink>
         <div
           class="block cursor-pointer lg:hidden menu-toggler"
@@ -41,7 +41,7 @@ const NavBar = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink class="px-4 hover:text-gray-800" to="/test">
+              <NavLink class="px-4 hover:text-gray-800" to="/">
                 About
               </NavLink>
             </li>

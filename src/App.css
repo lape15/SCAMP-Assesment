@@ -1,5 +1,6 @@
 .active {
-  border: 2px solid green;
+  /* border: 2px solid green; */
+  text-decoration: underline navy;
 }
 
 @media (min-width: 300px) and (max-width: 800px) {
