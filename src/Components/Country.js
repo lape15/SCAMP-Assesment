@@ -77,7 +77,7 @@ const Country = (props) => {
         ) : (
           <div className="text-center w-auto p-8 bg-gray-400 text-blue-900 ">
             <span className="text-2xl text-blue-900 font-bold lg:mr-8">
-              Nothing to information yet!
+              No information yet!
             </span>
             <Link to={'/home'} className="underline">
               Go to Homepage
