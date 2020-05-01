@@ -68,7 +68,7 @@ const Country = (props) => {
                 </b>
                 {oneCountry.Recovered}
               </div>
-              <div className="flex-1 m-2 p-2  lg:w-16 lg:text-lg text-blue-800 font-bold text-sm font-black tracking-wider">
+              <div className="flex-1 m-2 p-2  lg:w-16 lg:text-sm text-blue-800 font-bold text-sm font-black tracking-wider">
                 <b className="lg:hidden m-2 text-black font-bold">Date:</b>
                 {new Date(oneCountry.Date).toDateString()}
               </div>
