@@ -20,21 +20,21 @@ const Country = (props) => {
 
   return (
     <div className="w-auto  p-6 h-auto bg-transparent ">
-      <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 p-16">
-        <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300 border rounded">
-          <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+      <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 lg:p-12 country">
+        <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300  country-head">
+          <div className="lg:flex-1 m-2 p-2  lg:w-8 text-blue-800 font-black tracking-wider">
             Name
           </div>
-          <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+          <div className="lg:flex-1 m-2 p-2  w-8 text-blue-800 font-black tracking-wider">
             Confirmed cases
           </div>
-          <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+          <div className="lg:flex-1 m-2 p-2  w-8 text-blue-800 font-black tracking-wider">
             Deaths
           </div>
-          <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+          <div className="lg:flex-1 m-2 p-2  w-8 text-blue-800 font-black tracking-wider">
             Recovered
           </div>
-          <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
+          <div className="lg:flex-1 m-2 p-2  w-8 text-blue-800 font-black tracking-wider">
             Date
           </div>
         </div>
@@ -42,24 +42,34 @@ const Country = (props) => {
         {country && country.length > 0 ? (
           country.map((oneCountry, index) => (
             <div
-              className="flex w-auto  border
-            border-solid
-            border-gray-100 transition duration-500 ease-in-out bg-gray-200 transform hover:-translate-y-1 hover:scale-100"
+              className="lg:flex w-full block  border
+              border-solid
+              border-blue-100 mb-1 transition duration-500 ease-in-out lg:bg-gray-200 transform hover:-translate-y-1 hover:scale-100 cursor-pointer md:block  sm:block child bg-white-900"
               key={index}
             >
-              <div className="flex-1 m-12  w-16 text-blue-800 font-black tracking-wider ">
+              <div className="flex-1 m-2 p-2  lg:w-16 text-black font-bold tracking-wider md:block sm:block md:w-full sm:w-full">
+                <b className="lg:hidden m-2">Country:</b>
+
                 {oneCountry.Country}
               </div>
-              <div className="flex-1 m-12  w-8 text-red-500 font-black tracking-wider ">
+              <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider">
+                <b className="lg:hidden m-2 text-black font-bold">
+                  Confirmed Cases:
+                </b>
                 {oneCountry.Confirmed}
               </div>
-              <div className="flex-1 m-12  w-8 text-red-500 font-black tracking-wider ">
+              <div className="flex-1 m-2 p-2  lg:w-8 text-red-500 font-black tracking-wider ">
+                <b className="lg:hidden m-2 text-black font-bold">Deaths:</b>
                 {oneCountry.Deaths}
               </div>
-              <div className="flex-1 m-12  w-8 text-green-500 font-black tracking-wider">
+              <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider">
+                <b className="lg:hidden m-2 text-black font-bold">
+                  Recoveries:
+                </b>
                 {oneCountry.Recovered}
               </div>
-              <div className="flex-1 m-12  w-16 text-lg text-blue-800 font-bold font-black tracking-wider">
+              <div className="flex-1 m-2 p-2  lg:w-16 lg:text-lg text-blue-800 font-bold text-sm font-black tracking-wider">
+                <b className="lg:hidden m-2 text-black font-bold">Date:</b>
                 {new Date(oneCountry.Date).toDateString()}
               </div>
             </div>

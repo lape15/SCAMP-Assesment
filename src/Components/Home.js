@@ -42,6 +42,7 @@ const Home = () => {
           />
         </form>
       </div>
+
       <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 lg:p-12 country">
         <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300  country-head">
           <div className="lg:flex-1 m-2 p-2  lg:w-8 text-blue-800 font-black tracking-wider">
@@ -69,14 +70,14 @@ const Home = () => {
           <Link
             className="lg:flex w-full block  border
             border-solid
-            border-gray-100 transition duration-500 ease-in-out bg-gray-200 transform hover:-translate-y-1 hover:scale-100 cursor-pointer md:block  sm:block  sm:border sm:border-solid lg:border-0 sm:border-blue-400 child"
+            border-blue-100 mb-1 transition duration-500 ease-in-out lg:bg-gray-200 transform hover:-translate-y-1 hover:scale-100 cursor-pointer md:block  sm:block child bg-white-900"
             key={index}
             to={`/home/${country.Slug}`}
           >
             <div className="flex-1 m-2 p-2  lg:w-16 text-black font-bold tracking-wider md:block sm:block md:w-full sm:w-full">
               <b className="lg:hidden m-2">Country:</b> {country.Country}
             </div>
-            <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider ">
+            <div className="flex-1 m-2 p-2  lg:w-8 text-blue-500 font-black tracking-wider ">
               <b className="lg:hidden m-2 text-black font-bold">All Cases:</b>
               {country.TotalConfirmed}
             </div>
