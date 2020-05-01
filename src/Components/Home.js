@@ -44,21 +44,22 @@ const Home = () => {
       </div>
       <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 lg:p-12 country">
         <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300  country-head">
-          <div className="lg:flex-1 m-2 p-2  w-8 text-blue-800 font-black tracking-wider">
+          <div className="lg:flex-1 m-2 p-2  lg:w-8 text-blue-800 font-black tracking-wider">
             Country
           </div>
-          <div className="flex-1 m-2 p-2 w-8  text-blue-800 font-black tracking-wider">
-            NewDeaths
+          <div className="flex-1 m-2  w-12 text-blue-800 font-black tracking-wider">
+            All Cases
           </div>
-          <div className="flex-1 m-2 p-2 w-8 text-blue-800 font-black tracking-wider">
-            NewRecovered
-          </div>
-          <div className="flex-1 m-2 p-2  w-12 text-blue-800 font-black tracking-wider">
-            Confirmed Total
+          <div className="flex-1 m-2  w-12 text-blue-800 font-black tracking-wider">
+            New Cases
           </div>
           <div className="flex-1 m-2 p-2 w-8 text-blue-800 font-black tracking-wider">
             Deaths
           </div>
+          <div className="flex-1 m-2 p-2 w-8  text-blue-800 font-black tracking-wider">
+            NewDeaths
+          </div>
+
           <div className="flex-1 m-2 p-2 w-8 text-blue-800 font-black tracking-wider">
             Recovered
           </div>
@@ -72,22 +73,27 @@ const Home = () => {
             key={index}
             to={`/home/${country.Slug}`}
           >
-            <div className="flex-1 m-2 p-2  w-16 text-blue-800 font-black tracking-wider md:block sm:block md:w-full sm:w-full">
-              {country.Country}
+            <div className="flex-1 m-2 p-2  lg:w-16 text-black font-bold tracking-wider md:block sm:block md:w-full sm:w-full">
+              <b className="lg:hidden m-2">Country:</b> {country.Country}
             </div>
-            <div className="flex-1 m-2 p-2  w-8 text-red-500 font-black tracking-wider ">
-              {country.NewDeaths}
-            </div>
-            <div className="flex-1 m-2 p-2  w-8 text-green-500 font-black tracking-wider">
-              {country.NewRecovered}
-            </div>
-            <div className="flex-1 m-2 p-2  w-12 text-blue-800 font-black tracking-wider">
+            <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider ">
+              <b className="lg:hidden m-2 text-black font-bold">All Cases:</b>
               {country.TotalConfirmed}
             </div>
-            <div className="flex-1 m-2 p-2 w-8 text-red-500 font-black tracking-wider">
+            <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider">
+              <b className="lg:hidden m-2 text-black font-bold">New Cases:</b>
+              {country.NewConfirmed}
+            </div>
+            <div className="flex-1 m-2 p-2  lg:w-12 text-red-500 font-black tracking-wider">
+              <b className="lg:hidden m-2 text-black font-bold">Deaths:</b>
               {country.TotalDeaths}
             </div>
-            <div className="flex-1 m-2 p-2 w-8 text-green-500 font-black tracking-wider">
+            <div className="flex-1 m-2 p-2 lg:w-8 text-red-500 font-black tracking-wider">
+              <b className="lg:hidden m-2 text-black font-bold">New Deaths:</b>
+              {country.NewDeaths}
+            </div>
+            <div className="flex-1 m-2 p-2 lg:w-8 text-green-500 font-black tracking-wider">
+              <b className="lg:hidden m-2 text-black font-bold">Recovered:</b>
               {country.TotalRecovered}
             </div>
           </Link>

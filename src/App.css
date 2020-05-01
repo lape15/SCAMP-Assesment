@@ -19,13 +19,7 @@
   .hidden.hide {
     display: none;
   }
-  .parent {
-    border: 2px solid red;
-  }
-  .country {
-    border: 2px solid green;
-    padding: 0;
-  }
+
   .country-head {
     display: none;
   }
