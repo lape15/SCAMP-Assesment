@@ -35,18 +35,18 @@ const NavBar = () => {
           className={`hidden  lg:block  md:block  ${toggle ? 'menu' : 'hide'}`}
         >
           <ul class="lg:inline-flex md:inline">
-            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400">
+            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400 mb-2">
               <NavLink class="px-4 font-bold " to="/">
                 Home
               </NavLink>
             </li>
-            <li>
-              <NavLink class="px-4 hover:text-gray-800" to="/">
+            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400 mb-2">
+              <NavLink class="px-4 font-bold hover:text-gray-800" to="/">
                 About
               </NavLink>
             </li>
-            <li>
-              <NavLink class="px-4 hover:text-gray-800" to="/">
+            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400 mb-2">
+              <NavLink class="px-4 font-bold hover:text-gray-800" to="/">
                 Contact
               </NavLink>
             </li>

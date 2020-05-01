@@ -94,7 +94,7 @@ const Home = () => {
               {country.NewDeaths}
             </div>
             <div className="flex-1 m-2 p-2 lg:w-8 text-green-500 font-black tracking-wider">
-              <b className="lg:hidden m-2 text-black font-bold">Recovered:</b>
+              <b className="lg:hidden m-2 text-black font-bold">Recoveries:</b>
               {country.TotalRecovered}
             </div>
           </Link>

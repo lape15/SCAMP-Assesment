@@ -15,6 +15,7 @@
     background-color: #f9e6ff;
     padding: 30px 10px;
     box-shadow: 2px 2px aliceblue;
+    z-index: 99;
   }
   .hidden.hide {
     display: none;
@@ -24,7 +25,7 @@
     display: none;
   }
   .country-head .flex {
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
     display: block;
   }
 }
