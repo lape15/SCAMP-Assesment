@@ -19,9 +19,9 @@ const Country = (props) => {
   getCountryStat(countrySlug)
 
   return (
-    <div className="w-auto  p-6 h-auto bg-transparent">
+    <div className="w-auto  p-6 h-auto bg-transparent ">
       <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 p-16">
-        <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300">
+        <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300 border rounded">
           <div className="lg:flex-1 m-12  w-8 text-blue-800 font-black tracking-wider">
             Name
           </div>
@@ -67,7 +67,7 @@ const Country = (props) => {
         ) : (
           <div className="text-center w-auto p-8 bg-gray-400 text-blue-900 ">
             <span className="text-2xl text-blue-900 font-bold mr-8">
-              Nothing to show here
+              Nothing to information yet!
             </span>
             <Link to={'/home'} className="underline">
               Go to Homepage
