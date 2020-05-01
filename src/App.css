@@ -2,20 +2,34 @@
   /* border: 2px solid green; */
   text-decoration: underline navy;
 }
-
+@media (min-width: 414px) and (max-width: 736px) {
+  .hidden.menu {
+    top: 7vh;
+    left: 12px;
+    width: 351px;
+  }
+}
 @media (min-width: 300px) and (max-width: 800px) {
   .hidden.menu {
     /* border: 2px solid red; */
     display: block;
     position: absolute;
-    top: 7vh;
-    left: 10px;
+    top: 11vh;
+    left: 13px;
     width: 351px;
     text-align: center;
     background-color: #f9e6ff;
     padding: 30px 10px;
     box-shadow: 2px 2px aliceblue;
     z-index: 99;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    .hidden.menu {
+      top: 6.5vh;
+      left: 25vw;
+
+      width: 60%;
+    }
   }
   .hidden.hide {
     display: none;

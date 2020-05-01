@@ -20,7 +20,7 @@ const NavBar = () => {
           class="block cursor-pointer lg:hidden menu-toggler"
           onClick={handleToggler}
         >
-          <button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-teal-500 appearance-none focus:outline-none">
+          <button class="flex items-center px-3 py-2 border rounded text-gray-500 border-gray-600 hover:text-gray-800 hover:border-blue-200 appearance-none focus:outline-none">
             <svg
               class="fill-current h-3 w-3"
               viewBox="0 0 20 20"
@@ -35,17 +35,17 @@ const NavBar = () => {
           className={`hidden  lg:block  md:block  ${toggle ? 'menu' : 'hide'}`}
         >
           <ul class="lg:inline-flex md:inline">
-            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400 mb-2">
+            <li className=" lg:border lg:border-none mb-2">
               <NavLink class="px-4 font-bold " to="/">
                 Home
               </NavLink>
             </li>
-            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400 mb-2">
+            <li className=" lg:border lg:border-none  mb-2">
               <NavLink class="px-4 font-bold hover:text-gray-800" to="/">
                 About
               </NavLink>
             </li>
-            <li className=" lg:border lg:border-none md:border md:border-solid md:border-blue-400 mb-2">
+            <li className=" lg:border lg:border-none mb-2">
               <NavLink class="px-4 font-bold hover:text-gray-800" to="/">
                 Contact
               </NavLink>
