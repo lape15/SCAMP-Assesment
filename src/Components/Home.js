@@ -130,7 +130,7 @@ const Home = () => {
           Sort by Recovery
         </button>
       </div>
-      <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 lg:p-12 country">
+      <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 lg:p-2 country">
         <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300  country-head">
           <div className="lg:flex-1 m-2 p-2  lg:w-8 text-blue-800 font-black tracking-wider">
             Country
