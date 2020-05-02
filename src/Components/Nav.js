@@ -36,12 +36,15 @@ const NavBar = () => {
         >
           <ul class="lg:inline-flex md:inline">
             <li className=" lg:border lg:border-none mb-2">
-              <NavLink class="px-4 font-bold " to="/">
+              <NavLink class="px-4 active font-bold " to="/home">
                 Home
               </NavLink>
             </li>
             <li className=" lg:border lg:border-none  mb-2">
-              <NavLink class="px-4 font-bold hover:text-gray-800" to="/">
+              <NavLink
+                class="px-4 font-bold hover:text-gray-800 active"
+                to="/about"
+              >
                 About
               </NavLink>
             </li>

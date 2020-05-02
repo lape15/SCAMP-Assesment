@@ -8,6 +8,7 @@ import NavBar from './Components/Nav'
 import Home from './Components/Home'
 import Test from './Components/Test'
 import Country from './Components/Country'
+import AboutCorona from './Components/AboutCorona'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           exact
           render={(props) => <Country {...props} />}
         />
+        <Route path="/about" exact component={AboutCorona} />} />
       </Switch>
     </div>
   )
