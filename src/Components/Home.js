@@ -109,7 +109,7 @@ const Home = () => {
         </form>
       </div>
 
-      <div className="w-1/2  text-center bg-blue-200 border border-solid rounded border-white my-2 mx-auto">
+      <div className="w-1/2  text-center bg-transparent border border-solid rounded border-white my-2 mx-auto">
         {' '}
         <button
           onClick={highestConfirmed}
