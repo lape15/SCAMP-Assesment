@@ -1,13 +1,13 @@
-import React from "react";
-import HeroImage from "../../assets/hero1.jpg";
-import AboutImage from "../../assets/hero-image2.png";
-import VideoPlay from "../utils/VideoPlay";
-import Footer from "../layout/Footer";
+import React from 'react'
+import HeroImage from '../../assets/hero1.jpg'
+import AboutImage from '../../assets/hero-image2.png'
+import VideoPlay from '../utils/VideoPlay'
+import Footer from '../layout/Footer'
 
 const AboutCorona = () => {
   return (
-    <div className="about-corona">
-      <div className="container">
+    <div className="h-auto">
+      <div className="p-4">
         <div className="row about-corona about-corona__hero">
           <div className="col-md-6">
             <h2>COVID-19</h2>
@@ -20,7 +20,7 @@ const AboutCorona = () => {
               of coronavirus that has not been previously identified in
               humans...
             </p>
-            <button className="button button__blue-dark mt-4">
+            <button className="bg-blue-300 border rounded outline-0 mt-4">
               Read More...
             </button>
           </div>
@@ -32,7 +32,7 @@ const AboutCorona = () => {
         <div className="about-corona about-corona__section-2 my-5">
           <div className="row">
             <div className="col-md-6">
-              <img src={AboutImage} alt={AboutImage} className="img-fluid" />
+              <img src={AboutImage} alt={AboutImage} className="w-4/5" />
             </div>
             <div className="col-md-6">
               <h4>What is Covid-19?</h4>
@@ -71,7 +71,7 @@ const AboutCorona = () => {
       <VideoPlay />
       <Footer />
     </div>
-  );
-};
+  )
+}
 
-export default AboutCorona;
+export default AboutCorona
