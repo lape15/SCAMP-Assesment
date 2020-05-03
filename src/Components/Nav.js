@@ -12,7 +12,7 @@ const NavBar = () => {
   return (
     <nav>
       {/*className="sm:border sm:border-solid sm:border-blue-400"*/}
-      <div class="container mx-auto px-6 py-2 flex justify-between items-center relative fixed">
+      <div class="container mx-auto px-6 py-2 flex justify-between items-center relative">
         <NavLink className="px-4 font-bold text-3xl no-underline" to="/home">
           Covid19
         </NavLink>

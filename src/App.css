@@ -1,6 +1,7 @@
 .active {
-  /* border: 2px solid green; */
   text-decoration: underline #000000;
+
+  font-weight: bold;
 }
 .cov {
   background-image: url(./assets//hero-image2.png);

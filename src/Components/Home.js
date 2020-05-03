@@ -135,13 +135,13 @@ const Home = () => {
           <div className="lg:flex-1 m-2 p-2  lg:w-8 text-blue-800 font-black tracking-wider">
             Country
           </div>
-          <div className="flex-1 m-2  w-12 text-blue-800 font-black tracking-wider">
+          <div className="flex-1 m-2 p-2 w-12 text-blue-800 font-black tracking-wider">
             All Cases
           </div>
-          <div className="flex-1 m-2  w-12 text-blue-800 font-black tracking-wider">
+          <div className="flex-1 m-2 p-2 w-12 text-blue-800 font-black tracking-wider">
             New Cases
           </div>
-          <div className="flex-1 m-2 p-2 w-12 text-blue-800 font-black tracking-wider text-left ml-8">
+          <div className="flex-1 m-2 p-2 w-12 text-blue-800 font-black tracking-wider text-left ">
             Deaths
           </div>
           <div className="flex-1 m-2 p-2 w-8  text-blue-800 font-black tracking-wider">
