@@ -131,7 +131,7 @@ const Home = () => {
         </button>
       </div>
       <div className="w-auto bg-transparent text-gray-400  h-auto md: w-64 sm: w-64 lg:p-2 country">
-        <div className="md:hidden sm:hidden lg:flex  lg:w-auto lg:bg-gray-300  country-head">
+        <div className="md:hidden sm:hidden lg:flex  lg:w-auto bg-gray-300  country-head">
           <div className="lg:flex-1 m-2 p-2  lg:w-8 text-blue-800 font-black tracking-wider">
             Country
           </div>
@@ -153,40 +153,52 @@ const Home = () => {
           </div>
         </div>
 
-        {filteredCountries.map((country, index) => (
-          <Link
-            className="lg:flex w-full block  border
+        {filteredCountries.length > 0 ? (
+          filteredCountries.map((country, index) => (
+            <Link
+              className="lg:flex w-full block  border
             border-solid
             border-blue-100 mb-1 transition duration-500 ease-in-out lg:bg-gray-200 transform hover:-translate-y-1 hover:scale-100 cursor-pointer md:block  sm:block child bg-white-900"
-            key={index}
-            to={`/home/${country.Slug}`}
-          >
-            <div className="flex-1 m-2 p-2  lg:w-16 text-black font-bold tracking-wider md:block sm:block md:w-full sm:w-full">
-              <b className="lg:hidden font-bold m-2">Country:</b>{' '}
-              {country.Country}
-            </div>
-            <div className="flex-1 m-2 p-2  lg:w-8 text-blue-500 font-black tracking-wider font-bold">
-              <b className="lg:hidden m-2 text-black font-bold">All Cases:</b>
-              {country.TotalConfirmed}
-            </div>
-            <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider font-bold">
-              <b className="lg:hidden m-2 text-black font-bold">New Cases:</b>
-              {country.NewConfirmed}
-            </div>
-            <div className="flex-1 m-2 p-2  lg:w-12 text-red-500 font-black tracking-wider font-bold">
-              <b className="lg:hidden m-2 text-black font-bold">Deaths:</b>
-              {country.TotalDeaths}
-            </div>
-            <div className="flex-1 m-2 p-2 lg:w-8 text-red-500 font-black tracking-wider font-bold">
-              <b className="lg:hidden m-2 text-black font-bold">New Deaths:</b>
-              {country.NewDeaths}
-            </div>
-            <div className="flex-1 m-2 p-2 lg:w-8 text-green-500 font-black tracking-wider font-bold">
-              <b className="lg:hidden m-2 text-black font-bold">Recoveries:</b>
-              {country.TotalRecovered}
-            </div>
-          </Link>
-        ))}
+              key={index}
+              to={`/home/${country.Slug}`}
+            >
+              <div className="flex-1 m-2 p-2  lg:w-16 text-black font-bold tracking-wider md:block sm:block md:w-full sm:w-full">
+                <b className="lg:hidden font-bold m-2">Country:</b>{' '}
+                {country.Country}
+              </div>
+              <div className="flex-1 m-2 p-2  lg:w-8 text-blue-500 font-black tracking-wider font-bold">
+                <b className="lg:hidden m-2 text-black font-bold">All Cases:</b>
+                {country.TotalConfirmed}
+              </div>
+              <div className="flex-1 m-2 p-2  lg:w-8 text-green-500 font-black tracking-wider font-bold">
+                <b className="lg:hidden m-2 text-black font-bold">New Cases:</b>
+                {country.NewConfirmed}
+              </div>
+              <div className="flex-1 m-2 p-2  lg:w-12 text-red-500 font-black tracking-wider font-bold">
+                <b className="lg:hidden m-2 text-black font-bold">Deaths:</b>
+                {country.TotalDeaths}
+              </div>
+              <div className="flex-1 m-2 p-2 lg:w-8 text-red-500 font-black tracking-wider font-bold">
+                <b className="lg:hidden m-2 text-black font-bold">
+                  New Deaths:
+                </b>
+                {country.NewDeaths}
+              </div>
+              <div className="flex-1 m-2 p-2 lg:w-8 text-green-500 font-black tracking-wider font-bold">
+                <b className="lg:hidden m-2 text-black font-bold">
+                  Recoveries:
+                </b>
+                {country.TotalRecovered}
+              </div>
+            </Link>
+          ))
+        ) : (
+          <div className="text-center w-auto p-8 bg-gray-400 text-blue-900 ">
+            <span className="text-2xl text-blue-900 font-bold lg:mr-8">
+              Loading.....
+            </span>
+          </div>
+        )}
       </div>
     </div>
   )
