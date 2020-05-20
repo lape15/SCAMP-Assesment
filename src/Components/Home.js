@@ -64,30 +64,31 @@ const Home = () => {
       })
   }
 
-  let groupedCountry = []
-  let singleCountry = ''
-  let letter
-  let oneCountry
-  const groupCountries = stat.map((country) => {
-    letter = country.Country.charAt(0)
+  // let groupedCountry = []
+  // let singleCountry = ''
+  // let letter
+  // let oneCountry
+  // const groupCountries = stat.map((country) => {
 
-    oneCountry = country.Country.split('')
-    singleCountry = oneCountry[0]
-    if (singleCountry[0] === letter) {
-      console.log(letter)
-      groupedCountry.push(country)
-    }
-    return groupedCountry
-  })
+  //   letter = country.Country.charAt(0)
 
-  console.log(letter)
-  console.log(groupedCountry)
+  //   oneCountry = country.Country.split('')
+  //   singleCountry = oneCountry[0]
+  //   if (singleCountry[0] === letter) {
+  //     console.log(letter)
+  //     groupedCountry.push(country)
+  //   }
+  //   return groupedCountry
+  // })
 
-  const changeSection = (section) => {
-    if (activeSection === section) {
-    }
-    setActiveSection(activeSection === section ? '' : section)
-  }
+  // console.log(letter)
+  // console.log(groupedCountry)
+
+  // const changeSection = (section) => {
+  //   if (activeSection === section) {
+  //   }
+  //   setActiveSection(activeSection === section ? '' : section)
+  // }
   const filteredCountries = stat.filter((country) => {
     return (
       country.Country.toLowerCase().indexOf(searchField.toLowerCase()) !== -1
