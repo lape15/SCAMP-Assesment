@@ -6,6 +6,7 @@ const Home = () => {
   const [searchField, setSearchField] = useState('')
   const [activeSection, setActiveSection] = useState('country')
   useEffect(() => {
+    // console.log('Hi')
     const fetchData = () => {
       axios
         .get('https://api.covid19api.com/summary')
@@ -17,7 +18,7 @@ const Home = () => {
         })
     }
     fetchData()
-  }, [])
+  }, [searchField])
   const handeleSearch = (e) => {
     setSearchField(e.target.value)
     // console.log(searchField)
